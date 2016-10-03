@@ -1,0 +1,81 @@
+body {
+	background: url("backg3.png") no-repeat;
+}
+.pos {
+	border: 1px solid white; left: 230px; top: 160px; width: 800px; position: absolute;
+}
+.pos1 {
+	left: 230px; top: 220px; right: 230px; position: absolute;
+}
+.vision {
+	padding: 10px; border: 1px solid silver; left: 230px; top: 700px; width: 395px; right: 650px; color: rgb(105, 105, 105); font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; position: absolute;
+}
+.mission {
+	padding: 10px; border: 1px solid silver; left: 660px; top: 700px; width: 373px; right: 230px; color: rgb(105, 105, 105); font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; position: absolute;
+}
+.logo {
+	left: 420px; top: 0px; position: absolute;
+}
+.sidelink {
+	border: 1px solid white; left: 10px; top: 210px; width: 190px; right: 1080px; position: absolute;
+}
+.pos2 {
+	border: 1px solid white; left: 740px; top: 240px; width: 290px; right: 230px; color: green; position: absolute;
+}
+.browse {
+	padding: 10px; border: 1px solid green; left: 10px; top: 162px; width: 190px; color: white; font-size: 14px; position: absolute; background-color: green;
+}
+.browse1 {
+	padding: 10px; border: 1px solid green; left: 1060px; top: 162px; width: 190px; color: green; font-size: 14px; position: absolute; background-color: green;
+}
+.browse2 {
+	padding: 10px; border: 1px solid rgb(255, 248, 198); left: 10px; top: 426px; width: 190px; height: 400px; color: rgb(255, 248, 198); font-size: 14px; position: absolute; background-color: rgb(255, 248, 198);
+}
+.browse3 {
+	padding: 10px; border: 1px solid rgb(255, 248, 198); left: 1060px; top: 426px; width: 190px; height: 400px; color: rgb(255, 248, 198); font-size: 14px; position: absolute; background-color: rgb(255, 248, 198);
+}
+.about {
+	border: 1px solid white; left: 230px; top: 220px; width: 815px; right: 230px; position: absolute;
+}
+.services {
+	border: 1px solid white; left: 230px; top: 220px; width: 250px; right: 230px; position: absolute;
+}
+h3 {
+	color: green;
+}
+b {
+	color: green;
+}
+.contactmessage {
+	left: 230px; top: 550px; color: green; position: absolute;
+}
+.pos3 {
+	border-width: 1px; border-style: solid; border-color: rgb(195, 253, 184) white white; left: 740px; top: 450px; width: 290px; right: 230px; color: green; position: absolute;
+}
+.image1 {
+	left: 230px; top: 540px; position: absolute;
+}
+.image2 {
+	left: 450px; top: 540px; position: absolute;
+}
+.image3 {
+	left: 670px; top: 540px; position: absolute;
+}
+.image4 {
+	left: 890px; top: 540px; position: absolute;
+}
+.about1 {
+	left: 230px; top: 240px; right: 230px; color: rgb(105, 105, 105); padding-bottom: 10px; font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; border-bottom-color: silver; border-bottom-width: 1px; border-bottom-style: solid; position: absolute;
+}
+.about2 {
+	left: 230px; top: 320px; right: 230px; color: rgb(105, 105, 105); padding-bottom: 10px; font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; border-bottom-color: silver; border-bottom-width: 1px; border-bottom-style: solid; position: absolute;
+}
+.gallery1 {
+	left: 230px; top: 260px; right: 230px; padding-bottom: 10px; border-bottom-color: silver; border-bottom-width: 1px; border-bottom-style: solid; position: absolute;
+}
+.before {
+	left: 230px; top: 200px; color: green; font-family: "Comic Sans MS", cursive, sans-serif; position: absolute;
+}
+.after {
+	left: 630px; top: 200px; color: green; font-family: "Comic Sans MS", cursive, sans-serif; position: absolute;
+}

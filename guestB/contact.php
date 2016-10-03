@@ -1,0 +1,200 @@
+<?php
+session_start();
+
+if(isset($_POST["submit"]))
+{       
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$subject =$_POST['subject'];
+		$website = $_POST['website'];
+	    $message = $_POST['message'];
+		
+	   //=============Snding Email=============
+		$to = "manganyimj12@gmail.com";
+		
+		$fullMessage = "Dear sir/madam. I'm ".$name." ,here is my email address ".$email."  ".$message;
+		$message = $fullMessage;
+						
+		$headers = 'From: Luyolo Beds and Breakfast' . "\r\n" .
+				  'Reply-To: hr@luyolobnb.com' . "\r\n" ;
+							
+		mail($to, $subject, $message, $headers);
+							
+	    //======================================
+		//echo 'User successfully register';
+				
+	
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Luyolo</title>
+	
+	<!-- Main CSS file -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/logo/logo.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="images/icon/apple-touch-icon-57-precomposed.png">
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+</head>
+<body>
+
+	<!-- PRELOADER -->
+	<div id="st-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
+		</div>
+	</div>
+	<!-- /PRELOADER -->
+
+	
+	<!-- HEADER -->
+	<header id="header">
+       
+
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a> -->
+					<a class="navbar-brand" href="index.html"><img src="images/logo/logo.png"  class = "img-responsive img-thumbnail" alt="logo"></a>
+					<!-- <a class="navbar-brand" style="box-shadow: 1px red;">MD Technologies</a> -->
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right ">
+                    <ul class="nav navbar-nav ">
+					    <li class="hidden">
+                           <a href="#page-top"></a>
+                        </li>
+                        <li><a class="page-scroll" href="index.php">Home</a></li>
+						<li><a class="page-scroll" href="aboutus.html">About Us</a></li>
+                        <li><a class="page-scroll" href="services.php">Services</a></li>
+						<li><a class="page-scroll" href="gallery.html">Gallery</a></li>
+						<li><a  href="contact.php">Contact</a></li>
+						                   
+                    </ul>
+                </div>
+            </div>
+        </nav>
+		
+    </header>
+	<!-- /HEADER -->
+     
+  <!-- CONTACT -->
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h1 style="color:#ce932e"><b>Contact us</b></h1>
+						<!-- <span class="st-border"></span> -->
+					</div>
+				</div>
+				<div class="col-sm-4 contact-info">
+					<p class="contact-content">Luyolo Bed and Breakfast offers it is situated in Elliot CBD at <b style="color:#ce932e">Chris Hani District Municipality</b> in the <b style="color:#ce932e">Eastern Cape</b> province of South Africa. it is 80 km south-west of Maclear and 65 km south-east of Barkly East.<b style="color:#ce932e"> Physical Address: MILL STREET,ELLIOT 5460</b></p>
+					<p class="st-address"><i class="fa fa-map-marker"></i> <strong>MILL STREET, ELLIOT 5460</strong></p>
+					<p class="st-phone"><i class="fa fa-mobile"></i> <strong>+2772 240 6413</strong></p>
+					<p class="st-phone"><i class="fa fa-mobile"></i> <strong>Fax: 045 933 1241</strong></p>
+					<p class="st-email"><i class="fa fa-envelope-o"></i> <strong>luyolobandb@gmail.com</strong></p>
+					<p class="st-website"><i class="fa fa-globe"></i> <strong>www.luyolobnb.co.za</strong></p>
+				
+				</div>
+				<div class="col-sm-7 col-sm-offset-1">
+					<form action="<?php echo $_SERVER['PHP_SELF'] ;?>" class="contact-form" name="contact-form" method="post">
+						<div class="row">
+							<div class="col-sm-6">
+								<input type="text" name="name" required="required" placeholder="Name*">
+							</div>
+							<div class="col-sm-6">
+								<input type="email" name="email" required="required" placeholder="Email*">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="subject" placeholder="Subject">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="website" placeholder="Website">
+							</div>
+							<div class="col-sm-12">
+								<textarea name="message" required="required" cols="30" rows="7" placeholder="Message*"></textarea>
+							</div>
+							<div class="col-sm-12">
+								<input type="submit" name="submit" value="Send Message" class="btn btn-send">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /CONTACT -->
+	
+	<!-- FOOTER -->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<!-- SOCIAL ICONS -->
+				<div class="col-sm-6 col-sm-push-6 footer-social-icons">
+					<span style="color:white">Follow us:</span>
+					<a href=""><i style="color:#b37204" class="fa fa-facebook"></i></a>
+					<a href=""><i style="color:#b37204" class="fa fa-twitter"></i></a>
+					<a href=""><i style="color:#b37204" class="fa fa-google-plus"></i></a>
+					<a href=""><i style="color:#b37204" class="fa fa-pinterest-p"></i></a>
+				</div>
+				<!-- /SOCIAL ICONS -->
+				<div class="col-sm-6 col-sm-pull-6 copyright">
+					<p><b>&copy; Guest House. All Rights Reserved.</b></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- /FOOTER -->
+
+	<!-- Scroll-up -->
+	<div class="scroll-up">
+		<ul><li><a href="#header"><i class="fa fa-angle-up"></i></a></li></ul>
+	</div>
+	
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery.min.js"></script><!-- jQuery -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script><!-- Bootstrap -->
+	<script type="text/javascript" src="js/jquery.parallax.js"></script><!-- Parallax -->
+	<script type="text/javascript" src="js/smoothscroll.js"></script><!-- Smooth Scroll -->
+	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script><!-- masonry -->
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script><!-- fitvids -->
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script><!-- Owl-Carousel -->
+	<script type="text/javascript" src="js/jquery.counterup.min.js"></script><!-- CounterUp -->
+	<script type="text/javascript" src="js/waypoints.min.js"></script><!-- CounterUp -->
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script><!-- isotope -->
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script><!-- magnific-popup -->
+	<script type="text/javascript" src="js/scripts.js"></script><!-- Scripts -->
+
+
+</body>
+</html>
